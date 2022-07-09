@@ -4,42 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js" defer></script>
-<<<<<<< HEAD
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
     <title>JavaScript</title>
 </head>
 <body>
     <div class="wrapper">
-        <section class="section-1">
-            <input type="text" placeholder="Nombres">
-            <input type="text" placeholder="Apellidos">
-            <input type="text" placeholder="Edad">
-            <input type="text" placeholder="Correo electrónico">
-            <input type="text" placeholder="Documento identificación">
-            <button class="add">Añadir</button>
-        </section>
-        <section class="section-2">
-            <div class="titles">
-                <span class="a">Nombres</span>
-                <span class="b">Apellidos</span>
-                <span class="a">Edad</span>
-                <span class="b">Email</span>
-                <span class="a">ID</span>
+        <h2 class="heading">Data Table</h2>
+        <div class="table">
+            <div class="left">
+                <input id="input-name" type="text" placeholder="First name">
+                <input id="input-lastname" type="text" placeholder="Last name">
+                <input id="input-age" type="number" placeholder="Age">
+                <input id="input-email" type="email" placeholder="Email">
+                <input id="input-id" type="number" placeholder="Id">
+                <button id="add-btn">Add</button>
             </div>
-            <div>
-                <span class="a">Andrea Katerin</span>
-                <span class="b">Espitia Tique</span>
-                <span class="a">20</span>
-                <span class="b">aesp@gmail.com</span>
-                <span class="a">123456789</span>    
+            <div class="right">
+                <div class="rows">
+                    <span class="title cols">Nombres</span>
+                    <span class="title cols">Apellidos</span>
+                    <span class="title cols">Edad</span>
+                    <span class="title cols">E-mail</span>
+                    <span class="title cols">ID</span>
+                </div>
+                <div class="rows">
+                    <span class="item cols">Andrea Katerin</span>
+                    <span class="item cols">Espitia Tique</span>
+                    <span class="item cols">20</span>
+                    <span class="item cols">andreaespitiatique@gmail.com</span>
+                    <span class="item cols">1006122849</span>
+                </div>
+                <div class="rows">
+                    <span class="item cols">Edward Andrés</span>
+                    <span class="item cols">Delgado Something</span>
+                    <span class="item cols">23</span>
+                    <span class="item cols">eddandresdel@gmail.com</span>
+                    <span class="item cols">1006172894</span>
+                </div>
             </div>
-        </section>
+        </div>
     </div>
-    <title>Document</title>
-</head>
-<body>
-    <p id="plus">0</p>
-    <button id="click">Click Me</button>
 </body>
 </html>
