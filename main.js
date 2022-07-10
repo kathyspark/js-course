@@ -24,5 +24,11 @@ function crearElemento() {
         colItems[counter--].textContent = inputLastName.value;
         colItems[counter].textContent = inputName.value;
     }
+
+    inputId.value = '';
+    inputEmail.value = '';
+    inputAge.value = '';
+    inputLastName.value = '';
+    inputName.value = '';
     right.appendChild(row);
 }
