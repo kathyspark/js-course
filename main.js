@@ -23,8 +23,6 @@ function crearElemento() {
         colItems[counter--].textContent = inputAge.value;
         colItems[counter--].textContent = inputLastName.value;
         colItems[counter].textContent = inputName.value;
-        // console.log(colItems[10].textContent = inputName.value);
-        // console.log(colItems[11].textContent = inputLastName.value);
     }
     right.appendChild(row);
 }
