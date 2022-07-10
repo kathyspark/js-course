@@ -1,21 +1,30 @@
 const right = document.querySelector(".right");
 const inputName = document.querySelector("#input-name");
-const inputLastname = document.querySelector("#input-lastname");
+const inputLastName = document.querySelector("#input-lastname");
 const inputAge = document.querySelector("#input-age");
 const inputEmail = document.querySelector("#input-email");
 const inputId = document.querySelector("#input-id");
 const addBtn = document.querySelector("#add-btn");
 
-class Person {
-    constructor(nombre, apellidos, edad, email, id) {
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.edad = edad;
-        this.email = email;
-        this.id = id;
-    }
-}
+addBtn.addEventListener('click', crearElemento);
 
 function crearElemento() {
-    document.createElement("div");
+    const row = document.createElement("div");
+    row.setAttribute("class", "rows");
+    for(let i = 0; i <= 4; i++) {
+        const cols = document.createElement("span");
+        cols.setAttribute("class", "item cols");
+        row.appendChild(cols);
+        let colItems = document.querySelectorAll('.item');
+        let counter = colItems.length - 1;
+        console.log(counter);
+        colItems[counter--].textContent = inputId.value;
+        colItems[counter--].textContent = inputEmail.value;
+        colItems[counter--].textContent = inputAge.value;
+        colItems[counter--].textContent = inputLastName.value;
+        colItems[counter].textContent = inputName.value;
+        // console.log(colItems[10].textContent = inputName.value);
+        // console.log(colItems[11].textContent = inputLastName.value);
+    }
+    right.appendChild(row);
 }
