@@ -63,7 +63,7 @@ input, button {
     border: 1px solid gray;
 }
 
-.rows {
+.row {
     display: flex;
 }
 
