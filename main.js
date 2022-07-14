@@ -1,12 +1,16 @@
 const inputs = document.getElementsByTagName("input");
 const right = document.querySelector(".right");
 const addBtn = document.querySelector("#add-btn");
+const alertMessage = document.querySelector(".alert-message");
 
 addBtn.addEventListener('click', addElement);
 
 function addElement() {
     if(inputs[0].value === "" && inputs[1].value === "" && inputs[2].value === "" && inputs[3].value === "" && inputs[4].value === "") {
-        alert("Oops! You must enter the data first");
+        alertMessage.style.left = "10px";
+        setTimeout(()=> {
+            alertMessage.style.left = "-360px";
+        }, 3000);
     } else {
         const newRow = document.createElement("div");
         newRow.setAttribute("class", "row");

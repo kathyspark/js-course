@@ -102,3 +102,21 @@ input, button {
     background: rgba(90, 213, 178, 0.922);
     border-radius: 5px;
 }
+
+.alert-message {
+    background-color: rgba(255, 115, 115, 0.764);
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0 4px 5px 0 rgba(37, 37, 37, 0.433);
+    position: absolute;
+    top: 10px;
+    left: -360px;
+    transition: left 200ms ease-out;
+}
+
+.alert-message p {
+    color: #fff;
+    letter-spacing: 1px;
+}
