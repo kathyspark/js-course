@@ -1,9 +1,4 @@
 const right = document.querySelector(".right");
-const inputName = document.querySelector("#input-name");
-const inputLastName = document.querySelector("#input-lastname");
-const inputAge = document.querySelector("#input-age");
-const inputEmail = document.querySelector("#input-email");
-const inputId = document.querySelector("#input-id");
 const addBtn = document.querySelector("#add-btn");
 
 addBtn.addEventListener('click', addElement);
