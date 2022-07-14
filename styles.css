@@ -70,7 +70,7 @@ input, button {
     width: 400px;
     max-width: 400px;
     display: block;
-    border: 1px solid rgba(0, 0, 0, 0.577);
+    border: 1px solid rgb(255, 255, 255);
     text-align: center;
     white-space: nowrap;
 }
@@ -84,6 +84,7 @@ input, button {
 .item {
     padding: 7px 2px;
     overflow-x: scroll;
+    background: rgba(226, 226, 226, 0.776);
 }
 
 ::-webkit-scrollbar {
