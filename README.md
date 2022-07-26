@@ -1,3 +1,4 @@
-# JavaScript
+# Data table with JavaScript
 
-This repository is meant to upload the files from the JavaScript course.
+This project is about a table which can contain the data that
+you enter from the inputs.
